@@ -15,11 +15,11 @@
         app:icon="@android:drawable/ic_media_play"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/greetingTextView"
+        app:layout_constraintTop_toBottomOf="@+id/randomNumberInt"
         tools:text="Play" />
 
     <TextView
-        android:id="@+id/greetingTextView"
+        android:id="@+id/randomNumberInt"
         android:layout_width="95dp"
         android:layout_height="45dp"
         android:layout_marginTop="150dp"

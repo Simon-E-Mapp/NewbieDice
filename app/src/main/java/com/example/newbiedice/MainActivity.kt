@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
 
 
-    lateinit var greetingView : TextView
+    lateinit var randomNumber : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,20 +21,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        greetingView = findViewById(R.id.greetingTextView)
+        randomNumber = findViewById(R.id.randomNumberInt)
 
-        greetingView.text = "Push the button to roll"
+        randomNumber.text = "Push the button to roll"
 
         var button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
             val number = getMathRandom()
-            setGreetingText(number)
+            setRandomNumber(number)
         }
     }
 
 
-    fun setGreetingText(number : Int){
-        greetingView.text = "$number"
+    fun setRandomNumber(number : Int){
+        randomNumber.text = "$number"
     }
     fun getMathRandom() : Int{
         val number = (1..6).random()
